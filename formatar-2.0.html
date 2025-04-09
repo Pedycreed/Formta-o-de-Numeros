@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatador de CPF, CNPJ e Celular</title>
+    <link rel="stylesheet" href="css/formatar.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formatador de CPF, CNPJ e Celular</h1>
+        
+        <label for="input">Insira o número:</label>
+        <input type="text" id="input" placeholder="Ex: 12345678900 ou (22) 99816-4118">
+        <button onclick="formatar()">Formatar</button>
+
+        <div class="result" id="resultado" onclick="copiarResultado()">
+            <span id="textoResultado">Resultado aparecerá aqui...</span>
+        </div>
+        <div class="feedback" id="feedback">Copiado para a área de transferência!</div>
+    </div>
+
+    <button class="history-button" onclick="toggleHistorico()">📜</button>
+
+    <div class="history-window" id="historicoWindow">
+        <div class="history-header">
+            Histórico
+            <button onclick="toggleHistorico()">×</button>
+        </div>
+        <div class="history-list">
+            <ul id="historicoLista"></ul>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay" onclick="toggleHistorico()"></div>
+
+    <button class="theme-toggle" onclick="toggleTheme()">🌓</button>
+    <script src="js/formatar.js"></script>
+</body>
+</html>
