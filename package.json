@@ -8,7 +8,7 @@
     },
     "devDependencies": {
         "electron": "^29.1.4",
-        "electron-builder": "^26.0.12"
+        "electron-builder": "^24.9.1"
     },
     "repository": {
         "type": "git",
@@ -22,4 +22,12 @@
     },
     "homepage": "https://github.com/Pedycreed/Formta-o-de-Numeros#readme",
     "description": ""
+    ,
+    "build": {
+  "win": {
+    "target": "nsis",
+    "compression": "maximum"
+  }
 }
+}
+
