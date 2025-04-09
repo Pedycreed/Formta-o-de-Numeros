@@ -1,0 +1,25 @@
+{
+    "name": "formatador-2.0",
+    "version": "2.0.0",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron .",
+        "build": "electron-builder --win --mac --linux"
+    },
+    "devDependencies": {
+        "electron": "^29.1.4",
+        "electron-builder": "^26.0.12"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Pedycreed/Formta-o-de-Numeros.git"
+    },
+    "keywords": [],
+    "author": "Jhonatan Salgueiro",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Pedycreed/Formta-o-de-Numeros/issues"
+    },
+    "homepage": "https://github.com/Pedycreed/Formta-o-de-Numeros#readme",
+    "description": ""
+}
