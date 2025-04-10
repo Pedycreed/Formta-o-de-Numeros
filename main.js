@@ -17,3 +17,4 @@ function createWindow() {
 }
 
 app.whenReady().then(createWindow)
+app.commandLine.appendSwitch('disable-ffmpeg');

@@ -8,7 +8,8 @@
     },
     "devDependencies": {
         "electron": "^29.1.4",
-        "electron-builder": "^24.9.1"
+        "electron-builder": "^26.0.12",
+        "upx": "^1.0.6"
     },
     "repository": {
         "type": "git",
@@ -21,13 +22,27 @@
         "url": "https://github.com/Pedycreed/Formta-o-de-Numeros/issues"
     },
     "homepage": "https://github.com/Pedycreed/Formta-o-de-Numeros#readme",
-    "description": ""
-    ,
+    "description": "",
     "build": {
-  "win": {
-    "target": "nsis",
-    "compression": "maximum"
-  }
+        "win": {
+            "target": "nsis",
+            "extraFiles": [
+                {
+                    "from": "resources/ffmpeg.dll",
+                    "to": "."
+                }
+            ]
+        }
+    },
+        "dependencies": {
+            "ffmpeg-static": "^5.2.0"
+        },
+            "build": {
+                "win": {
+                    "compression": "maximum"
+                }
+    }
+
 }
-}
+
 
